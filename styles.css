@@ -1,0 +1,79 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: slategrey;
+    color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+}
+input{
+    font-size: 20px;
+    border-radius: 5px;
+    padding-left: 25px;
+    
+}
+.game-container{
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+    font-size: 35px;
+    }
+.game-container>button{
+    font-size: 25px;
+    border-radius: 10px;
+    padding: .5rem 1.5rem;
+    background-color: teal;
+    color: antiquewhite;
+}
+.game-board{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 30%;
+    aspect-ratio: 1/1;    
+}
+
+.game-board>div{
+    border: 1px solid wheat;
+    color: wheat;
+    
+    font-size: 80px;
+    font-weight: 600;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+
+}
+.valid:hover{
+    background-color: rgba(0, 128, 128, 0.204);
+    cursor: pointer;
+}
+
+.top{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    font-size: 35px;
+    
+}
+.names{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+}
+.names > button{
+    grid-column: 2/4;
+    width: 30%;
+    font-size: 2rem;
+    border-radius: 8px;
+    background-color: teal;
+    color: antiquewhite;
+}
+.winning{
+    background-color: teal;
+}
+.hide{
+    display: none;
+}
